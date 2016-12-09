@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Exercise8_Notepad</string>
+    <string name="name">نام</string>
+    <string name="family">نام خانوادگی</string>
+    <string name="email">ایمیل</string>
+    <string name="txt">متن مورد نظر</string>
+    <string name="title">اطلاعات پرسنلی</string>
+    <string name="set">ثبت</string>
+    <string name="cancel">انصراف</string>
 </resources>
