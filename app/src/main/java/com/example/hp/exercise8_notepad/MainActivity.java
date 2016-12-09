@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    View mydlg;
+    AlertDialog diolog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +25,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 LayoutInflater inflater = getLayoutInflater();
-                View mydlg = inflater.inflate(R.layout.mydialog, null ,false);
-                AlertDialog diolog = builder.setView(mydlg).create();
+                mydlg = inflater.inflate(R.layout.mydialog, null ,false);
+                Button btnset = (Button) mydlg.findViewById(R.id.btnset);
+                Button btncancel = (Button) mydlg.findViewById(R.id.btncancel);
+
+                diolog = builder.setView(mydlg).create();
                 diolog.show();
+
+                btnset.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        diolog.dismiss();
+                    }
+                });
+                btncancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        diolog.dismiss();
+                    }
+                });
+
 
 
 
