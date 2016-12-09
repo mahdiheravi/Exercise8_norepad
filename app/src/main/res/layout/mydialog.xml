@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="9">
+    android:weightSum="10">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -75,6 +75,18 @@
             android:id="@+id/txttxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:textAlignment="center"
+            android:id="@+id/btnset"
+            android:text="@string/set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
