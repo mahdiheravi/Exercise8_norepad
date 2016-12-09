@@ -7,4 +7,9 @@
     <string name="title">اطلاعات پرسنلی</string>
     <string name="set">ثبت</string>
     <string name="cancel">انصراف</string>
+    <string name="New">جدید</string>
+    <string name="Edit">ویرایش</string>
+    <string name="View">نمایش</string>
+    <string name="Setting">تنظیمات</string>
+    <string name="Help">راهنما</string>
 </resources>
